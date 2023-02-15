@@ -1,0 +1,61 @@
+.LowerConInLogin {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto';
+}
+.FormCon {
+  width: 40%;
+  background-color: #2c364c;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+}
+.FirstConInForm {
+  width: 20%;
+  margin: 13px;
+}
+.logo {
+  width: 100%;
+}
+.inpu {
+  width: 100%;
+  padding: 9px;
+  outline: none;
+  border-radius: 13px;
+}
+.SecondConInForm {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 23px;
+}
+.btn {
+  background-color: #6366f1;
+  border-radius: 14px;
+  border-style: none;
+  padding: 13px;
+  color: white;
+  width: 70%;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .FormCon {
+    width: 90%;
+  }
+  .SecondConInForm {
+    width: 80%;
+  }
+  .btn {
+    width: 80%;
+  }
+}
+.p {
+  color: red;
+}

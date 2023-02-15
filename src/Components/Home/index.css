@@ -1,0 +1,28 @@
+.HomeMainCon {
+  min-height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  background-size: cover;
+  margin: 0px;
+  color: white;
+}
+.LowerConInHome {
+  min-height: 80vh;
+}
+.ContentInHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 73px;
+  width: 30%;
+  font-size: 23px;
+}
+@media (max-width: 767px) {
+  .ContentInHome {
+    width: 80%;
+    margin: 32px;
+    font-size: 13px;
+  }
+  .HomeMainCon {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+  }
+}

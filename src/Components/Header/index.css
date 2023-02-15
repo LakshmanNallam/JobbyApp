@@ -1,0 +1,74 @@
+.HeaderCom {
+  display: flex;
+  min-height: 9vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #272727;
+  font-family: 'Roboto';
+  margin: 0px;
+  font-weight: bold;
+}
+.LogoConHolder {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100%;
+}
+.MiddleCon {
+  width: 20%;
+  text-align: center;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.btnCon {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 23px;
+}
+.LogoUtBtn {
+  width: 30%;
+  background-color: #6366f1;
+  border-radius: 14px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .MiddleCon {
+    display: none;
+  }
+  .btnCon {
+    display: none;
+  }
+  .SmHoLgCon {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .HeaderCom {
+    min-height: 7vh;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .SmHoLgCon {
+    display: none;
+  }
+}
+
+.ColorWhite {
+  color: white;
+}
+.home {
+  text-decoration: none;
+  color: white;
+}

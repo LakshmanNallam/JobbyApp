@@ -1,0 +1,145 @@
+.BgBlack {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LowerConInJobs {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 23px;
+}
+.LeftConInJobs {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.RightConInJobs {
+  width: 68%;
+}
+.ProfileImgCon {
+  width: 70%;
+  min-height: 20vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 23px;
+  padding-top: 23px;
+  color: grey;
+}
+
+.searchInputCon {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  border-radius: 13px;
+  height: 30px;
+}
+.searchInpu {
+  width: 47%;
+  height: 30px;
+  background-color: black;
+  border-style: solid;
+  color: white;
+  padding-left: 23px;
+
+  outline: none;
+}
+.SearchImgIMported {
+  width: 10%;
+  background-color: #202020;
+  height: 30px;
+}
+
+.avatarConHolder {
+  width: 20%;
+}
+
+.avatarr {
+  width: 100%;
+}
+.h11 {
+  color: blue;
+}
+hr {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .LowerConInJobs {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LeftConInJobs {
+    width: 100%;
+  }
+  .ProfileImgCon {
+    width: 100%;
+  }
+}
+
+.JobCard {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 23px;
+  border-radius: 13px;
+  background-color: #475569;
+  color: white;
+  margin: 20px;
+  margin-left: 0px;
+}
+.CardFirstCon {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+}
+.CompanyLogoHolderCon {
+  width: 10%;
+  margin-right: 19px;
+}
+.ComponayLogo {
+  width: 100%;
+}
+.rightConInCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.CardSecondCon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.LocatipnCon {
+  display: flex;
+  align-items: center;
+}
+.Link {
+  text-decoration: none;
+  color: black;
+}
+.hr {
+  width: 100%;
+}
+.location {
+  margin-right: 13px;
+}
+.UlCon {
+  width: 100%;
+}

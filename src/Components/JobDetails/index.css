@@ -1,0 +1,65 @@
+.MainDivInDetails {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+.LowerConInDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.ConInLowerConDetails {
+  width: 80%;
+  background-color: grey;
+  margin-top: 23px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ConForSkills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.SkillCon {
+  width: 25%;
+  display: flex;
+  margin: 23px;
+}
+.SkillConImgHolder {
+  width: 20%;
+  margin-right: 13px;
+}
+.skillLogo {
+  width: 100%;
+}
+.DesConLarge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Con1INdes {
+  width: 60%;
+}
+.DESCIMGCONHOLD {
+  min-width: 20%;
+}
+.jjdsf {
+  font-size: 23px;
+}
+.SimilarJobScON {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.star {
+  color: yellow;
+}
