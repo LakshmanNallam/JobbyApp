@@ -74,7 +74,7 @@ class Jobs extends Component {
     this.setState({CurrentSituation: StateObj.loading})
     console.log(inputVal)
     const jobType = employmanetTypeList.join()
-    const token = Cookies.get('jwt_toke')
+    const token = Cookies.get('jwt_token')
     const options = {headers: {Authorization: `Bearer ${token}`}, method: 'GET'}
 
     const response2 = await fetch(
@@ -149,47 +149,50 @@ class Jobs extends Component {
             <p>We could not find any jobs. Try other filters</p>
           </>
         ) : (
-          jobs.map(eachItem => {
-            const data = {
-              id: eachItem.id,
-              url: eachItem.company_logo_url,
-              type: eachItem.employment_type,
-              about: eachItem.job_description,
-              location: eachItem.location,
-              salary: eachItem.package_per_annum,
-              rating: eachItem.rating,
-              title: eachItem.title,
-            }
-            return (
-              <Link to={`/jobs/${data.id}`} className="Link" key={data.id}>
-                <li className="JobCard">
-                  <div className="CardFirstCon">
-                    <div className="CompanyLogoHolderCon">
-                      <img
-                        src={`${data.url}`}
-                        className="ComponayLogo"
-                        alt="company logo"
-                      />
+          <div className="UlCon">
+            {' '}
+            {jobs.map(eachItem => {
+              const data = {
+                id: eachItem.id,
+                url: eachItem.company_logo_url,
+                type: eachItem.employment_type,
+                about: eachItem.job_description,
+                location: eachItem.location,
+                salary: eachItem.package_per_annum,
+                rating: eachItem.rating,
+                title: eachItem.title,
+              }
+              return (
+                <Link to={`/jobs/${data.id}`} className="Link" key={data.id}>
+                  <li className="JobCard">
+                    <div className="CardFirstCon">
+                      <div className="CompanyLogoHolderCon">
+                        <img
+                          src={`${data.url}`}
+                          className="ComponayLogo"
+                          alt="company logo"
+                        />
+                      </div>
+                      <div className="rightConInCard">
+                        <h1>{data.title}</h1>
+                        <p>{data.rating}</p>
+                      </div>
                     </div>
-                    <div className="rightConInCard">
-                      <h1>{data.title}</h1>
-                      <p>{data.rating}</p>
+                    <div className="CardSecondCon">
+                      <div className="LocatipnCon">
+                        <p className="location">{data.location}</p>
+                        <p>{data.type}</p>
+                      </div>
+                      <p>{data.salary}</p>
                     </div>
-                  </div>
-                  <div className="CardSecondCon">
-                    <div className="LocatipnCon">
-                      <p className="location">{data.location}</p>
-                      <p>{data.type}</p>
-                    </div>
-                    <p>{data.salary}</p>
-                  </div>
-                  <hr className="hr" />
-                  <h1>Description</h1>
-                  <p>{data.about}</p>
-                </li>
-              </Link>
-            )
-          })
+                    <hr className="hr" />
+                    <p>Description</p>
+                    <p>{data.about}</p>
+                  </li>
+                </Link>
+              )
+            })}
+          </div>
         )
 
       case StateObj.failure:
@@ -308,7 +311,7 @@ class Jobs extends Component {
                 <BsSearch className="SearchImgIMported" />
               </button>
             </div>
-            <ul className="UlCon">{this.renderJobsList()}</ul>
+            {this.renderJobsList()}
           </div>
         </div>
       </div>

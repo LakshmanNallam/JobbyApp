@@ -57,6 +57,9 @@
     min-height: 7vh;
     width: 100%;
   }
+  .sdfkj {
+    width: 15%;
+  }
 }
 
 @media (min-width: 768px) {

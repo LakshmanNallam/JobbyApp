@@ -52,9 +52,9 @@
   border-style: solid;
   color: white;
   padding-left: 23px;
-
   outline: none;
 }
+
 .SearchImgIMported {
   width: 10%;
   background-color: #202020;
@@ -73,20 +73,6 @@
 }
 hr {
   width: 70%;
-}
-@media (max-width: 767px) {
-  .LowerConInJobs {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .LeftConInJobs {
-    width: 100%;
-  }
-  .ProfileImgCon {
-    width: 100%;
-  }
 }
 
 .JobCard {
@@ -142,4 +128,37 @@ hr {
 }
 .UlCon {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .searchInpu {
+    width: 100%;
+  }
+  .searchInputCon {
+    width: 95%;
+  }
+  .RightConInJobs {
+    width: 90%;
+  }
+  .LowerConInJobs {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LeftConInJobs {
+    width: 100%;
+  }
+  .ProfileImgCon {
+    width: 100%;
+  }
+  .JobCard {
+    width: 100%;
+  }
+  .CompanyLogoHolderCon {
+    width: 40%;
+  }
+  .CardFirstCon {
+    font-size: 13px;
+    align-items: center;
+  }
 }

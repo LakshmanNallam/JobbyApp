@@ -66,7 +66,7 @@ class JobDetails extends Component {
     }
     return (
       <>
-        <li className="JobCard">
+        <li className="JobCard2 widthMin">
           <div className="CardFirstCon">
             <div className="CompanyLogoHolderCon">
               <img
@@ -105,13 +105,13 @@ class JobDetails extends Component {
           <div className="ConForSkills">
             {skills.map(eachItem => (
               <div className="SkillCon">
-                <li className="SkillConImgHolder" key={eachItem.name}>
+                <div className="SkillConImgHolder" key={eachItem.name}>
                   <img
                     src={`${eachItem.image_url}`}
                     className="skillLogo"
                     alt={eachItem.name}
                   />
-                </li>
+                </div>
                 <p>{eachItem.name}</p>
               </div>
             ))}
@@ -131,11 +131,11 @@ class JobDetails extends Component {
           </div>
         </li>
         <h1>Similar Jobs</h1>
-        <ul className="SimilarJobScON">
+        <div className="SimilarJobScON">
           {SimilarJobsList.map(eachItem => (
             <SimilarJobCard eachItem={eachItem} key={eachItem.id} />
           ))}
-        </ul>
+        </div>
       </>
     )
   }
@@ -177,10 +177,9 @@ class JobDetails extends Component {
     return (
       <div className="MainDivInDetails">
         <Header />
-        <ul className="LowerConInDetails">
-          {' '}
+        <div className="LowerConInDetails2">
           {this.renderCurrentSituationDetails()}
-        </ul>
+        </div>
       </div>
     )
   }

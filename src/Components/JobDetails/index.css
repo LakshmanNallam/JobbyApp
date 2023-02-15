@@ -2,24 +2,19 @@
   min-height: 100vh;
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.LowerConInDetails {
+.LowerConInDetails2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   min-height: 100vh;
 }
-.ConInLowerConDetails {
-  width: 80%;
-  background-color: grey;
-  margin-top: 23px;
-  border-radius: 13px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .ConForSkills {
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +23,7 @@
 .SkillCon {
   width: 25%;
   display: flex;
+  align-items: center;
   margin: 23px;
 }
 .SkillConImgHolder {
@@ -53,6 +49,7 @@
 }
 .SimilarJobScON {
   width: 90%;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -62,4 +59,36 @@
 }
 .star {
   color: yellow;
+}
+.JobCard2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 13px;
+  border-radius: 13px;
+  background-color: #475569;
+  margin: 20px;
+  margin-left: 0px;
+}
+@media (max-width: 767px) {
+  .JobCard2 {
+    width: 90%;
+  }
+  .SkillCon {
+    width: 50%;
+  }
+  .DesConLarge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Con1INdes {
+    width: 90%;
+  }
+  .SimilarJobScON {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

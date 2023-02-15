@@ -47,17 +47,19 @@ class Header extends Component {
             LogOut
           </button>
         </div>
-        <ul className="SmHoLgCon">
-          <li>
+        <div className="SmHoLgCon">
+          <Link to="/">
             <AiOutlineHome className="ColorWhite" />
-          </li>
-          <li>
+          </Link>
+
+          <Link to="/jobs">
             <FaWpforms className="ColorWhite" />
-          </li>
-          <li>
+          </Link>
+
+          <li onClick={this.LogoutButtonCliked}>
             <FiLogOut className="ColorWhite" />
           </li>
-        </ul>
+        </div>
       </div>
     )
   }
